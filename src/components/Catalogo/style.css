@@ -1,0 +1,21 @@
+.catalogo-style{
+    font-size:12px;
+}
+
+.catalogo-style h1 {
+    display:flex;
+    justify-content:center;
+}
+
+.catalogo-org img {
+    width: 90px;
+}
+
+.catalogo-org h2 {
+    padding-top:50px;
+}
+
+.catalogo-org h3 {
+    padding-left:30px;
+}
+
