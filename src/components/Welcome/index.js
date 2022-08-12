@@ -32,13 +32,14 @@ const Welcome = () => {
     </div>
              <div className="box-content">
                     {page == 'home' && <Home/>} 
-            </div>
+           
+                    </div>
             <div className="box-information">
                 
                     {page == 'catalogo' && <Catalogo/> } 
                     {page == 'about' && <About/>}
                     {page == 'produtos' && <Produtos/>}
-                   
+                    
             </div>
           
         </div>
