@@ -24,11 +24,27 @@ const Catalogo = () => {
             img:'https://cdn.olivre.com.br/wp-content/uploads/2019/09/20190912-y5i92dqjh3m31.jpg',
             genero:'Terror',
             dub:'Dublado',
-            chairs:'https://cdn-icons-png.flaticon.com/512/24/24868.png',
             chairs:[
                 {"id": 1, used: true},
                 {"id": 2, used: false},
                 {"id": 3, used: true},
+                {"id": 4, used: true},
+                {"id": 5, used: false},
+                {"id": 6, used: true},
+                {"id": 7, used: true},
+                {"id": 8, used: false},
+                {"id": 9, used: true},
+                {"id": 10, used: true},
+                {"id": 11, used: true},
+                {"id": 12, used: false},
+                {"id": 13, used: true},
+                {"id": 14, used: true},
+                {"id": 15, used: false},
+                {"id": 16, used: true},
+                {"id": 17, used: true},
+                {"id": 18, used: false},
+                {"id": 19, used: true},
+                {"id": 20, used: true},
             ]
             },
             {
@@ -38,17 +54,63 @@ const Catalogo = () => {
                 img:'https://cdn.olivre.com.br/wp-content/uploads/2019/09/20190912-y5i92dqjh3m31.jpg',
                 genero:'ação/aventura',
                 dub:'Legendado',
+                chairs:[
+                    {"id": 1, used: true},
+                    {"id": 2, used: false},
+                    {"id": 3, used: true},
+                    {"id": 4, used: true},
+                    {"id": 5, used: false},
+                    {"id": 6, used: true},
+                    {"id": 7, used: true},
+                    {"id": 8, used: false},
+                    {"id": 9, used: true},
+                    {"id": 10, used: true},
+                    {"id": 11, used: true},
+                    {"id": 12, used: false},
+                    {"id": 13, used: true},
+                    {"id": 14, used: true},
+                    {"id": 15, used: false},
+                    {"id": 16, used: true},
+                    {"id": 17, used: true},
+                    {"id": 18, used: false},
+                    {"id": 19, used: true},
+                    {"id": 20, used: true},
+                ]
                 },
                 {
-                    titulo: 'Baita 3',
-                    horario: '12:05',
-                    sinopse:'sinopse',
-                    img:'https://cdn.olivre.com.br/wp-content/uploads/2019/09/20190912-y5i92dqjh3m31.jpg',
-                    genero:'Suspense',
-                    dub:'Dublado',
+                titulo: 'Baita 3',
+                horario: '12:05',
+                sinopse:'sinopse',
+                img:'https://cdn.olivre.com.br/wp-content/uploads/2019/09/20190912-y5i92dqjh3m31.jpg',
+                genero:'Suspense',
+                dub:'Dublado',
+                chairs:[
+                    {"id": 1, used: true},
+                    {"id": 2, used: false},
+                    {"id": 3, used: true},
+                    {"id": 4, used: true},
+                    {"id": 5, used: false},
+                    {"id": 6, used: true},
+                    {"id": 7, used: true},
+                    {"id": 8, used: false},
+                    {"id": 9, used: true},
+                    {"id": 10, used: true},
+                    {"id": 11, used: true},
+                    {"id": 12, used: false},
+                    {"id": 13, used: true},
+                    {"id": 14, used: true},
+                    {"id": 15, used: false},
+                    {"id": 16, used: true},
+                    {"id": 17, used: true},
+                    {"id": 18, used: false},
+                    {"id": 19, used: true},
+                    {"id": 20, used: true},
+                    ]
                     },
         
     ]
+
+    
 
     return(
         <Fragment>
@@ -64,6 +126,7 @@ const Catalogo = () => {
                          <div style={{display: 'flex',alignItems:'center'}}>
                          <img src = {f.img}/>  
                              <h3>{f.sinopse}</h3>
+                             <h3></h3>
                          </div>
                             </>
                          ))}                    

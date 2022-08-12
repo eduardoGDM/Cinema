@@ -24,18 +24,16 @@ const Welcome = () => {
         </div>                  
     </div> 
             <div className="navegation-Button">
-                <Button onClick={()=>setPage('home')} className="button-Navegation"color="error">Home</Button>
-                <Button onClick={()=>setPage('catalogo')} className="button-Navegation"color="error">FILMES</Button>
-                <Button  className="button-Navegation" onClick={()=>setPage('produtos')} color="error">Produtos</Button>
-                <Button onClick={()=>setPage('about')} className="button-Navegation"color="error">Sobre</Button>
+                <Button onClick={()=>setPage('home')} className="button-Navegation">Home</Button>
+                <Button onClick={()=>setPage('catalogo')} className="button-Navegation">FILMES</Button>
+                <Button onClick={()=>setPage('produtos')} className="button-Navegation" >Produtos</Button>
+                <Button onClick={()=>setPage('about')} className="button-Navegation">Sobre</Button>
 
     </div>
              <div className="box-content">
                     {page == 'home' && <Home/>} 
-           
                     </div>
             <div className="box-information">
-                
                     {page == 'catalogo' && <Catalogo/> } 
                     {page == 'about' && <About/>}
                     {page == 'produtos' && <Produtos/>}
