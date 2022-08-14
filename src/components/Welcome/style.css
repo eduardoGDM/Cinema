@@ -2,11 +2,13 @@
     padding: 0;
     margin:0;
     box-sizing: border-box;
-    
+    font-family: 'Poppins', sans-serif;
 }
 
 
-
+.Cinema-title h2 {
+    color:red;
+}
 
 .navegation-Button{
     display:flex;

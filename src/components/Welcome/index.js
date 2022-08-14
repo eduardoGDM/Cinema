@@ -18,7 +18,7 @@ const Welcome = () => {
     <Fragment>
             <div className="main-container">
                 <div className="Top-bar">
-                    <h1 className="Cinema-title">Cinema World</h1>
+                    <h1 className="Cinema-title">Cinema <h2>World</h2></h1> 
                         <div className="icon-bar">
                             <a href = "#"><BiCartAlt className="icon-Theme"/></a>
         </div>                  

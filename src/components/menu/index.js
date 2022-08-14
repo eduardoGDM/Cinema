@@ -3,13 +3,9 @@ import {Button} from "@mui/material";
 import {MdChair, MdSecurityUpdateGood} from 'react-icons/md'; 
 
 import './style.css';
-import Store from '../store';
-
-
+    
 
 const Menu = ({data, show}) => {
-
-    const[page,setPage] = useState('store')
 
     const [assentos, setAssentos] = useState([]);
 
@@ -24,32 +20,40 @@ const Menu = ({data, show}) => {
         <img src = {data.img}/> 
             <div style={{display: 'flex',flexDirection: 'column'}}> 
                 <h1>Filme: {data.titulo}</h1>
-                <h3>{data.dub}</h3>
+                <span>{data.dub}</span>
             </div>
                 <div>
                     <h1>Sessão: {data.horario}</h1>
-                    <h2>Gênero:{data.genero}</h2>
+                    <span>Gênero:{data.genero}</span>
                     
              </div>
         </div>
         <div className="assentos-container"> 
-            <h2>
-                Escolha seus assentos  
-            </h2>  
+            <span>
+                Escolha seus assentos :
+            </span>  
             <div className="chairs-container">
                 {data.chairs.map((c)=>{
                     return( 
                     <div className="cadeirinha-div" onClick={(e) => pushChairs(c)}> 
-                            <MdChair size="45px" color={c.used ? "#f6f6f6" : "#008000"}/>
+                            <MdChair size="30px" color={c.used ? "#f6f6f6" : "#008000"}/>
                             <span className="cadeirinha">{c.id}</span>
 
                     </div>)
-
                 })}
             </div>
-            <Button onClick={()=>setPage('store')}> Avançar</Button> 
         </div>
+        <div className="store-container">
+                <div> 
+                    <span>Você deseja algum acompanhamento para a sessão?</span>
+                </div>
+                    <div>
+                        <h1>{data.img_water}</h1>
+                    </div>
+            </div>
     </Fragment>
     )
 }
 export default Menu;
+
+// bebida pipoca 

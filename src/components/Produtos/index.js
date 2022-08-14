@@ -1,9 +1,7 @@
-import React from 'react';
+import React from 'react'; 
 
 const Produtos = () => {
-    return (
-        <h1>Produtos</h1>
-    )
+    <h1>asdasd</h1>
 }
 
-export default Produtos;
+export default Produtos; 
