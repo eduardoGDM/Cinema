@@ -1,9 +1,12 @@
 import React, {Fragment, useState} from 'react';
 import {Button} from "@mui/material";
-import {MdChair, MdSecurityUpdateGood} from 'react-icons/md'; 
+import {MdChair} from 'react-icons/md'; 
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import './style.css';
-    
+
+import waterImg from '../../images/water.png';
+import popcornImg from '../../images/popcorn.png';
 
 const Menu = ({data, show}) => {
 
@@ -13,6 +16,25 @@ const Menu = ({data, show}) => {
         setAssentos((a) => [...a, e])
         console.log(assentos);
     }
+
+    const[countWater,setCountWater] = useState(0);
+
+    function decreaseWater() {
+        if (countWater - 1 >= 0) {
+            setCountWater(countWater - 1);
+        }
+    }
+
+    const[countPop,setCountPop] = useState(0);
+
+    function decreasePop() {
+        if(countPop -1 >=  0) {
+                setCountPop(countPop -1);
+        }
+    }
+
+
+
     return(
     <Fragment>
         <Button variant="text" onClick={() => show(false)}>voltar</Button>
@@ -43,17 +65,32 @@ const Menu = ({data, show}) => {
                 })}
             </div>
         </div>
+        <span>Você deseja algum acompanhamento para a sessão?</span>
         <div className="store-container">
-                <div> 
-                    <span>Você deseja algum acompanhamento para a sessão?</span>
-                </div>
                     <div>
-                        <h1>{data.img_water}</h1>
+                         <img style={{width: '50px'}} src={waterImg}/>                    
+                        <p>{countWater} Água 250ml  </p>
+                        <Button onClick={() => setCountWater(countWater+1)}> +</Button> 
+                        <Button onClick={() => decreaseWater()}>-</Button>    
                     </div>
-            </div>
+                    <div>
+                         <img style={{width: '50px'}} src={popcornImg}/>
+                         <p>{countPop} Pipoca</p>
+                         <Button onClick={() => setCountPop(countPop+1 )}> +</Button>
+                         <Button onClick={() => decreasePop()}> - </Button>
+                    </div>
+                    <Button>
+                        {/* colocar um link para esse button entrar em outra page  */}
+                        <span>Prosseguir</span>
+                    <ArrowForwardIcon/>
+                    </Button>
+                </div>
+                
     </Fragment>
     )
+
 }
 export default Menu;
 
-// bebida pipoca 
+//como salvar nos cookies 
+//fazer a porra da pasgina 

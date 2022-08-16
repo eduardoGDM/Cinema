@@ -3,7 +3,6 @@ import './style.css';
 import {Button} from "@mui/material";
 
 import Menu from '../menu';
-import water from '../../images/water.png';
 
 const Catalogo = () => {
 
@@ -21,13 +20,7 @@ const Catalogo = () => {
             horario: '12:05',
             sinopse:'sinopse',
             img:'https://cdn.olivre.com.br/wp-content/uploads/2019/09/20190912-y5i92dqjh3m31.jpg',
-            // ta importando o link em vez da imagem     
-            img_pipoca:'https://cdn-icons-png.flaticon.com/512/3439/3439699.png',
-            img_water:'https://cdn-icons.flaticon.com/png/512/2745/premium/2745060.png?token=exp=1660483590~hmac=1397d0eef0280506ec7ba744324f8aa9',         
-            // ta importando o link em vez da imagem     
-
-                
-            genero:'Terror',
+            genero:'Binare',
             dub:'Dublado',
             bebidas:'Agua',
             comidas:'Pipoca',
@@ -66,8 +59,6 @@ const Catalogo = () => {
                 horario: '12:05',
                 sinopse:'sinopse',
                 img:'https://cdn.olivre.com.br/wp-content/uploads/2019/09/20190912-y5i92dqjh3m31.jpg',
-                img_pipoca:'https://cdn-icons-png.flaticon.com/512/3439/3439699.png',
-                img_water:'https://cdn-icons.flaticon.com/png/512/2745/premium/2745060.png?token=exp=1660483590~hmac=1397d0eef0280506ec7ba744324f8aa9',
                 genero:'ação/aventura',
                 dub:'Legendado',
                 bebidas:'Agua',
@@ -107,8 +98,6 @@ const Catalogo = () => {
                 horario: '12:05',
                 sinopse:'sinopse',
                 img:'https://cdn.olivre.com.br/wp-content/uploads/2019/09/20190912-y5i92dqjh3m31.jpg',
-                img_pipoca:'https://cdn-icons-png.flaticon.com/512/3439/3439699.png',
-                img_water:'https://cdn-icons-png.flaticon.com/512/2892/2892731.png',
                 genero:'Suspense',
                 dub:'Dublado',
                 bebidas:'Agua',

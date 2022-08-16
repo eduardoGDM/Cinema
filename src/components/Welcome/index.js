@@ -12,8 +12,7 @@ import Produtos from '../Produtos';
 const Welcome = () => {
 
     const[page, setPage] = useState('home')
-
-        
+  
     return(
     <Fragment>
             <div className="main-container">
