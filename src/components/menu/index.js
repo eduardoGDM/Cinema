@@ -15,7 +15,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: "background.paper",
+  bgcolor: "rgba(0, 0, 0,)",
   border: "2px solid #000",
   boxShadow: 24,
   display: "flex",
@@ -56,26 +56,7 @@ const Menu = ({ data, show }) => {
 
   return (
     <Fragment>
-      <Button onClick={handleOpen}>Open modal</Button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <section
-          sx={style}
-          className="modal-card"
-          onClick={() => handleClose()}
-        >
-          <div>
-            <h1>Text in a modal</h1>
-            <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </p>
-          </div>
-        </section>
-      </Modal>
+      
       <Button variant="text" onClick={() => show(false)}>
         voltar
       </Button>
@@ -117,15 +98,43 @@ const Menu = ({ data, show }) => {
           <Button onClick={() => setCountPop(countPop + 1)}> +</Button>
           <Button onClick={() => decreasePop()}> - </Button>
         </div>
-
-        <div></div>
+        <div className="Modal-Container"> 
+        <Button onClick={handleOpen}>Prosseguir</Button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <section
+          sx={style}
+          className="modal-card"
+          onClick={() => handleClose()}
+        >
+          <div className="modal-card-show">
+            <h1>Dados da Compra!!</h1>
+            <div className="modal-inf">
+            <p>Filme: {data.titulo}</p>
+            <p>Gênero: {data.genero}</p>
+            <p>{data.dub} </p>
+            <p>Horario: {data.horario}</p>
+            <p>Agua: {countWater}</p>
+            <p>Pipoca: {countPop}</p>
+            </div>
+          </div>
+        </section>  
+      </Modal>
       </div>
+      </div>
+      
       <div>
         {assentos.map((ass, i) => (
           <Fragment>
+            <h1>Seleção de compra</h1>  
             <p>Assentos selecionados:</p>
-            <br />
+            <br/>
             <p>{ass.id}</p>
+
           </Fragment>
         ))}
       </div>
