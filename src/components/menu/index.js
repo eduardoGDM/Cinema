@@ -1,14 +1,20 @@
 import React, {Fragment, useState} from 'react';
 import {Button} from "@mui/material";
 import {MdChair} from 'react-icons/md'; 
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
+// import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Modal from '@mui/material/Modal';
 import './style.css';
 
 import waterImg from '../../images/water.png';
 import popcornImg from '../../images/popcorn.png';
 
 const Menu = ({data, show}) => {
+
+    function BasicModal() {
+        const [open, setOpen] = React.useState(false);
+        const handleOpen = () => setOpen(true);
+        const handleClose = () => setOpen(false);
+    }
 
     const [assentos, setAssentos] = useState([]);
 
@@ -32,8 +38,6 @@ const Menu = ({data, show}) => {
                 setCountPop(countPop -1);
         }
     }
-
-
 
     return(
     <Fragment>
@@ -79,11 +83,10 @@ const Menu = ({data, show}) => {
                          <Button onClick={() => setCountPop(countPop+1 )}> +</Button>
                          <Button onClick={() => decreasePop()}> - </Button>
                     </div>
-                    <Button>
-                        {/* colocar um link para esse button entrar em outra page  */}
-                        <span>Prosseguir</span>
-                    <ArrowForwardIcon/>
-                    </Button>
+                    <Button >Open modal</Button>
+
+                    <div>      
+    </div>
                 </div>
                 
     </Fragment>

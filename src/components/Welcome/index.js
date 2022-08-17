@@ -7,7 +7,6 @@ import './style.css';
 import Catalogo from '../Catalogo';
 import Home from '../Home';
 import About from '../About';
-import Produtos from '../Produtos';
 
 const Welcome = () => {
 
@@ -25,7 +24,6 @@ const Welcome = () => {
             <div className="navegation-Button">
                 <Button onClick={()=>setPage('home')} className="button-Navegation">Home</Button>
                 <Button onClick={()=>setPage('catalogo')} className="button-Navegation">FILMES</Button>
-                <Button onClick={()=>setPage('produtos')} className="button-Navegation" >Produtos</Button>
                 <Button onClick={()=>setPage('about')} className="button-Navegation">Sobre</Button>
 
     </div>
@@ -34,13 +32,9 @@ const Welcome = () => {
                     </div>
             <div className="box-information">
                     {page == 'catalogo' && <Catalogo/> } 
-                    {page == 'about' && <About/>}
-                    {page == 'produtos' && <Produtos/>}
-                    
-            </div>
-          
-        </div>
-                
+                    {page == 'about' && <About/>}                    
+            </div>     
+        </div>     
     </Fragment>
     )
 }
