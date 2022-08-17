@@ -3,6 +3,22 @@
     color:white;
 }
 
+
+
+.modal-card{
+   
+    height: 100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-card div{
+    background-color:#fff;
+    padding: 50px;
+}
+
 .menu-container {
     display:flex;
     justify-content:space-between;
