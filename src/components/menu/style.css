@@ -30,6 +30,7 @@
 
 }
 
+
 .assentos-container {
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -49,10 +50,21 @@
 
 }
 
+.cadeirinha-div:hover {
+    border-radius: 20px;
+    background-color:white;
+    cursor:pointer;
+}
+
+.button-selection {
+    border-radius: 20px;
+    background-color:white;
+}
 .cadeirinha {
     font-weight: 700;
     position:absolute;
 }
+
 
 .chairs-container {
     display:flex;
@@ -68,6 +80,7 @@
 }
 .Modal-Container {
     display:flex;
+   height:100%;
 }
 
 .modal-inf{
@@ -89,4 +102,8 @@
 .modal-card-show{
     border-radius: 10px;
     
+}
+
+.buy-info {
+    border-top: 1px solid rgb(255, 255, 255);
 }
